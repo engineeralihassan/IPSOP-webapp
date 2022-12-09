@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact-us/IP-School of Programing</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body></body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IP-School of Programing</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <section class="flex">
+        <a href="index.html" class="logo">IPSOP.</a>
+
+        <form action="search.html" method="post" class="search-form">
+          <input
+            type="text"
+            name="search_box"
+            required
+            placeholder="search courses..."
+            maxlength="100"
+          />
+          <button type="submit" class="fas fa-search"></button>
+        </form>
+
+        <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <div id="search-btn" class="fas fa-search"></div>
+          <div id="user-btn" class="fas fa-user"></div>
+          <div id="toggle-btn" class="fas fa-sun"></div>
+        </div>
+
+        <div class="profile current-user-acount-details">
+       
+          <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">register</a>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!--jjjjjjjjjjjjjjjjjjjjjj  -->
+
+    <div class="side-bar">
+      <div id="close-btn">
+        <i class="fas fa-times"></i>
+      </div>
+
+      <div class="profile current-user-acount-details">
+      
+      </div>
+
+      <nav class="navbar">
+        <a href="index.html"><i class="fas fa-home"></i><span>home</span></a>
+        <a href="about.html"
+          ><i class="fas fa-question"></i><span>about</span></a
+        >
+        <a href="courses.html"
+          ><i class="fas fa-graduation-cap"></i><span>courses</span></a
+        >
+        <a href="teachers.html"
+          ><i class="fas fa-chalkboard-user"></i><span>teachers</span></a
+        >
+        <a href="contact.html"
+          ><i class="fas fa-headset"></i><span>contact us</span></a
+        >
+      </nav>
+    </div>
+    <!-- contact us  -->
+
+    <section class="contact">
+      <div class="row">
+        <div class="image">
+          <img src="assets/images/contact-img.svg" alt="" />
+        </div>
+
+        <form id="contactform">
+          <h3>get in touch</h3>
+          <input
+            type="text"
+            placeholder="enter your name"
+            name="name"
+            required
+            maxlength="50"
+            class="box name"
+            id="name"
+          />
+          <input
+            type="email"
+            placeholder="enter your email"
+            name="email"
+            required
+            maxlength="50"
+            class="box email"
+            id="email"
+          />
+          <input
+            placeholder="enter your number"
+            type="tel"
+            id="phone"
+            name="phone"
+            class="box phone"
+            maxlength="11"
+            required
+          />
+
+          <textarea
+            name="msg"
+            class="box message"
+            placeholder="How can we help you"
+            required
+            maxlength="1000"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button type="submit" class="inline-btn" name="submit" id="submit">
+            send message
+          </button>
+        </form>
+        <div class="submite-message">
+          <i class="fas fa-times" id="close-message"></i>
+          <div class="submit-message-box">
+            <p>
+              Thanks for contact us ! we contact you back as soon as possible
+            </p>
+            <a href="index.html" class="inline-btn">Go to Home</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-phone"></i>
+          <h3>phone number</h3>
+          <a href="tel:1234567890">03133324617</a>
+          <a href="tel:1112223333">03192514617</a>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-envelope"></i>
+          <h3>email address</h3>
+          <a href="mailto:engineralihassan@gmail.com"
+            >engineralihassan@gmail.com</a
+          >
+          <a href="mailto:engineralihassan@gmail.com"
+            >acountscreation@gmail.com</a
+          >
+        </div>
+
+        <div class="box">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>office address</h3>
+          <a href="#">Chack No 11/1L,Renala Khurd,OKara,punjab ,Pakistan</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section starts -->
+    <footer class="footer">
+      &copy; copyright @ 2022 by <span>IP-Schools of Programing </span> | all
+      rights are reserve!d
+    </footer>
+
+    <!-- custom js file link  -->
+    <script type="module" src="assets/script.js"></script>
+    <!-- smtp link -->
+
+    <script>
+      let submit = document.querySelector("#submit");
+      let form = document.querySelector("#contactform");
+      let messageBox = document.querySelector(".submite-message");
+      let closeMessage = document.querySelector("#close-message");
+      let name = document.querySelector(".name");
+      let email = document.querySelector(".email");
+      let phone = document.querySelector(".phone");
+      let message = document.querySelector(".message");
+
+      submit.addEventListener("click", (e) => {
+        e.preventDefault();
+        if (
+          name.value !== "" &&
+          email.value !== "" &&
+          phone.value !== "" &&
+          message.value !== ""
+        ) {
+          setTimeout(
+            () => {
+              form.style.display = "none";
+              messageBox.style.display = "block";
+              email.value = phone.value = message.value = name.value = "";
+            },
+            2,
+            000
+          );
+        } else {
+          alert("please fill all the fields");
+        }
+      });
+      closeMessage.addEventListener("click", () => {
+        messageBox.style.display = "none";
+
+        form.style.display = "block";
+      });
+    </script>
+  </body>
+</html>
